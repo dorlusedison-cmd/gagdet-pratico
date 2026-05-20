@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard privado do Gadget Prático."><title>Dashboard Admin - Gadget Prático</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header>
+  <a class="logoWrap" href="index.html"><div class="icon">⚡</div><div class="logoText"><strong>Gadget</strong><span>Prático</span><small>TECH RECOMENDA</small></div></a>
+  <nav><a href="index.html">Ver Site</a><a href="dashboard.html" class="active">Dashboard</a><a href="#" onclick="logoutAdmin()">Sair</a></nav>
+  <div class="theme">☼</div>
+</header>
+<section class="section page-top">
+  <span class="kicker">Admin</span><h2>Dashboard <span class="green">Privado</span></h2><br>
+  <div class="admin-stats">
+    <div class="stat-card"><span>Produtos cadastrados</span><strong id="totalProducts">0</strong></div>
+    <div class="stat-card"><span>Blogs publicados</span><strong id="totalBlogs">0</strong></div>
+    <div class="stat-card"><span>Status</span><strong>Online</strong></div>
+  </div>
+  <br><br>
+  <div class="dashboard-grid">
+    <div class="form-box">
+      <h3>Adicionar produto</h3><br>
+      <form class="dashboard-form" onsubmit="addProduct(event)">
+        <input id="name" placeholder="Nome do produto" required>
+        <select id="category" required><option value="Gadgets">Gadgets</option><option value="Tecnologia">Tecnologia</option><option value="Acessórios Celular">Acessórios Celular</option><option value="Gadgets para Casa">Gadgets para Casa</option><option value="Setup Gamer">Setup Gamer</option><option value="Ofertas">Ofertas</option></select>
+        <input id="price" placeholder="Preço: 199,90" required>
+        <input id="image" placeholder="Link da imagem do produto" required>
+        <select id="badge"><option value="Melhor escolha">Melhor escolha</option><option value="Mais vendido">Mais vendido</option><option value="Oferta quente">Oferta quente</option><option value="Custo-benefício">Custo-benefício</option><option value="Novo">Novo</option></select>
+        <textarea id="description" rows="4" placeholder="Descrição do produto" required></textarea>
+        <select id="linkType" required><option value="amazon">Amazon</option><option value="shopee">Shopee</option><option value="mercado">Mercado Livre</option><option value="outro">Outro link</option></select>
+        <input id="productLink" placeholder="Cole aqui o único link do produto" required>
+        <button class="btn primary" type="submit">Salvar Produto</button>
+      </form>
+    </div>
+    <div class="form-box">
+      <h3>Publicar blog</h3><br>
+      <form class="dashboard-form" onsubmit="addBlog(event)">
+        <input id="blogTitle" placeholder="Título do blog" required>
+        <input id="blogImage" placeholder="Link da imagem do blog">
+        <textarea id="blogDescription" rows="4" placeholder="Resumo do blog" required></textarea>
+        <textarea id="blogContent" rows="7" placeholder="Conteúdo do blog / texto completo" required></textarea>
+        <select id="blogLinkType"><option value="amazon">Amazon</option><option value="shopee">Shopee</option><option value="mercado">Mercado Livre</option><option value="youtube">YouTube</option><option value="site">Site externo</option><option value="outro">Outro link</option></select>
+        <input id="blogLink" placeholder="Cole aqui o link relacionado ao blog">
+        <button class="btn primary" type="submit">Publicar Blog</button>
+      </form>
+    </div>
+  </div>
+  <br><br><h2>Produtos cadastrados</h2><br>
+  <div class="table-wrap"><table><thead><tr><th>Produto</th><th>Categoria</th><th>Preço</th><th>Link</th><th>Ações</th></tr></thead><tbody id="productTable"></tbody></table></div>
+  <br><br><h2>Blogs publicados</h2><br>
+  <div class="table-wrap"><table><thead><tr><th>Título</th><th>Link</th><th>Ações</th></tr></thead><tbody id="blogTable"></tbody></table></div>
+</section>
+<footer>
+  <div class="footer-links">
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+    <a href="politica.html">Política de Privacidade</a>
+    <a href="termos.html">Termos de Uso</a>
+    <a href="afiliados.html">Divulgação de Afiliados</a>
+  </div>
+  <p>© 2026 Gadget Prático — Afiliados Amazon, Shopee, Mercado Livre e outras lojas.</p>
+</footer>
+<script src="script.js"></script><script>document.addEventListener("DOMContentLoaded",()=>{protectAdminPage();renderDashboard();renderBlogDashboard();});</script></body></html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Leia artigos completos do Gadget Prático sobre gadgets, tecnologia e produtos úteis.">
+  <title>Artigo - Gadget Prático</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logoWrap" href="index.html">
+    <div class="icon">⚡</div>
+    <div class="logoText"><strong>Gadget</strong><span>Prático</span><small>TECH RECOMENDA</small></div>
+  </a>
+  <nav>
+    <a href="index.html" data-page="index">Home</a>
+    <a href="gadgets.html" data-page="gadgets">Gadgets Úteis</a>
+    <a href="tecnologia.html" data-page="tecnologia">Tecnologia & PC</a>
+    <a href="celular.html" data-page="celular">Acessórios Celular</a>
+    <a href="casa.html" data-page="casa">Gadgets para Casa</a>
+    <a href="setup.html" data-page="setup">Setup Gamer</a>
+    <a href="ofertas.html" data-page="ofertas">Ofertas do Dia</a>
+    <a href="blog.html" data-page="blog" class="active">Blog</a>
+    <a href="sobre.html" data-page="sobre">Sobre</a>
+    <a href="contato.html" data-page="contato">Contato</a>
+  </nav>
+  <div class="searchBox">⌕ <input id="searchInput" type="text" placeholder="Buscar gadgets..."></div>
+  <div class="theme" title="Mudar tema">☼</div>
+</header>
+
+<section class="section page-top">
+  <div id="articleContainer"></div>
+</section>
+
+<footer>
+  <div class="footer-links">
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+    <a href="politica.html">Política de Privacidade</a>
+    <a href="termos.html">Termos de Uso</a>
+    <a href="afiliados.html">Divulgação de Afiliados</a>
+  </div>
+  <p>© 2026 Gadget Prático — Afiliados Amazon, Shopee, Mercado Livre e outras lojas.</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => renderArticleDetail("articleContainer"));
+</script>
+</body>
+</html>

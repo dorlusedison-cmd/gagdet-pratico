@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gadget Prático recomenda gadgets úteis, tecnologia, acessórios, ofertas e produtos inteligentes para facilitar sua rotina.">
+  <title>Gadget Prático</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="logoWrap" href="index.html">
+    <div class="icon">⚡</div>
+    <div class="logoText"><strong>Gadget</strong><span>Prático</span><small>TECH RECOMENDA</small></div>
+  </a>
+  <nav>
+    <a href="index.html" data-page="index" class="active">Home</a>
+    <a href="gadgets.html" data-page="gadgets">Gadgets Úteis</a>
+    <a href="tecnologia.html" data-page="tecnologia">Tecnologia & PC</a>
+    <a href="celular.html" data-page="celular">Acessórios Celular</a>
+    <a href="casa.html" data-page="casa">Gadgets para Casa</a>
+    <a href="setup.html" data-page="setup">Setup Gamer</a>
+    <a href="ofertas.html" data-page="ofertas">Ofertas do Dia</a>
+    <a href="blog.html" data-page="blog">Blog</a>
+    <a href="sobre.html" data-page="sobre">Sobre</a>
+    <a href="contato.html" data-page="contato">Contato</a>
+  </nav>
+  <div class="searchBox">⌕ <input id="searchInput" type="text" placeholder="Buscar gadgets..."></div>
+  <div class="theme" title="Mudar tema">☼</div>
+</header>
+<section class="hero">
+  <div>
+    <div class="badge">✧ Curadoria premium 2026</div>
+    <h1>Descubra <span>gadgets incríveis</span> que facilitam sua vida</h1>
+    <p>Os melhores produtos úteis, tecnológicos e inteligentes para o seu dia a dia. Reviews honestas, ofertas reais e a melhor curadoria do Brasil.</p>
+    <div class="buttons">
+      <a class="btn primary" href="gadgets.html">Ver Gadgets →</a>
+      <a class="btn dark" href="ofertas.html">🔥 Ofertas do Dia</a>
+    </div>
+    <div class="stats">
+      <span><b>⊙</b> +1.500 produtos</span>
+      <span><b>♙</b> Reviews honestas</span>
+      <span><b>♧</b> 50k leitores/mês</span>
+    </div>
+  </div>
+  <div class="visual">
+    <img src="https://images.unsplash.com/photo-1601524909162-ae8725290836?q=80&w=1400&auto=format&fit=crop" alt="Gadgets premium">
+    <div class="float top"><div class="floatIcon">★</div><div><small>Rating médio</small><strong>4.8 / 5.0</strong></div></div>
+    <div class="float bottom"><div class="floatIcon">↗</div><div><small>Mais vendido</small><strong>+12.5k vendas</strong></div></div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="sectionHead">
+    <div><span class="kicker">Categorias</span><h2>Navegue por <span class="green">categoria</span></h2></div>
+    <p>Encontre exatamente o que precisa entre nossas categorias cuidadosamente selecionadas.</p>
+  </div>
+  <div class="grid">
+    <a class="card" href="gadgets.html"><div class="content"><h3>⚡ Gadgets Úteis</h3><p>Produtos práticos para facilitar sua vida.</p></div></a>
+    <a class="card" href="tecnologia.html"><div class="content"><h3>💻 Tecnologia & PC</h3><p>Acessórios para computador, estudo e trabalho.</p></div></a>
+    <a class="card" href="celular.html"><div class="content"><h3>📱 Acessórios Celular</h3><p>Itens úteis para proteger, carregar e melhorar seu smartphone.</p></div></a>
+    <a class="card" href="casa.html"><div class="content"><h3>🏠 Gadgets para Casa</h3><p>Produtos inteligentes para sua rotina dentro de casa.</p></div></a>
+    <a class="card" href="setup.html"><div class="content"><h3>🎮 Setup Gamer</h3><p>Produtos para deixar seu setup mais profissional.</p></div></a>
+    <a class="card" href="ofertas.html"><div class="content"><h3>🔥 Ofertas do Dia</h3><p>Achados com links Amazon, Shopee e outros.</p></div></a>
+  </div>
+</section>
+
+
+
+<section class="section viral-section reveal">
+  <div class="sectionHead">
+    <div>
+      <span class="kicker">🔥 Viral agora</span>
+      <h2>Produtos que estão <span class="green">bombando</span></h2>
+    </div>
+    <p>Uma vitrine com produtos chamativos, perfeitos para cliques, Shorts, TikTok e compras por impulso.</p>
+  </div>
+  <div class="trend-strip">
+    <span>🔥 TikTok made me buy it</span>
+    <span>⚡ Alta procura</span>
+    <span>🎁 Ideias de presente</span>
+    <span>🚀 Mais clicados</span>
+  </div>
+  <div class="grid" id="viralProducts"></div>
+</section>
+
+<section class="section reveal">
+  <div class="sectionHead">
+    <div>
+      <span class="kicker">🏆 Mais vendidos</span>
+      <h2>Escolhas com maior <span class="green">potencial de venda</span></h2>
+    </div>
+    <p>Produtos com visual forte, preço acessível e boa chance de gerar cliques para afiliados.</p>
+  </div>
+  <div class="grid" id="bestSellerProducts"></div>
+</section>
+
+<section class="section trust-section reveal">
+  <div class="sectionHead">
+    <div>
+      <span class="kicker">Por que confiar?</span>
+      <h2>Curadoria feita para comprar <span class="green">melhor</span></h2>
+    </div>
+  </div>
+  <div class="trust-grid">
+    <div class="trust-card">✓ Produtos selecionados</div>
+    <div class="trust-card">✓ Reviews honestas</div>
+    <div class="trust-card">✓ Links seguros</div>
+    <div class="trust-card">✓ Atualizado com tendências</div>
+  </div>
+</section>
+
+<section class="section reviews-section reveal">
+  <div class="sectionHead">
+    <div>
+      <span class="kicker">⭐ Opiniões</span>
+      <h2>O que os leitores <span class="green">procuram</span></h2>
+    </div>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card"><strong>⭐⭐⭐⭐⭐</strong><p>“Achei produtos úteis que eu nem sabia que existiam.”</p><span>— Carlos M.</span></div>
+    <div class="review-card"><strong>⭐⭐⭐⭐⭐</strong><p>“Muito bom para encontrar gadgets baratos e diferentes.”</p><span>— Ana P.</span></div>
+    <div class="review-card"><strong>⭐⭐⭐⭐⭐</strong><p>“A página é direta, bonita e facilita comparar as ofertas.”</p><span>— Rafael S.</span></div>
+  </div>
+</section>
+
+<section class="section newsletter-section reveal">
+  <div class="newsletter-box">
+    <span class="kicker">Ofertas e tendências</span>
+    <h2>Receba gadgets virais toda semana</h2>
+    <p>Cadastre seu email para receber ideias de produtos úteis, ofertas e tendências de tecnologia.</p>
+    <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+      <input type="email" id="newsletterEmail" placeholder="Seu melhor email" required>
+      <button type="submit">Quero receber</button>
+    </form>
+    <small id="newsletterMessage"></small>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="sectionHead"><div><span class="kicker">Destaques</span><h2>Produtos <span class="green">recomendados</span></h2></div></div>
+  <div class="grid" id="homeProducts"></div>
+</section>
+<footer>
+  <div class="footer-links">
+    <a href="sobre.html">Sobre</a>
+    <a href="contato.html">Contato</a>
+    <a href="politica.html">Política de Privacidade</a>
+    <a href="termos.html">Termos de Uso</a>
+    <a href="afiliados.html">Divulgação de Afiliados</a>
+  </div>
+  <p>© 2026 Gadget Prático — Afiliados Amazon, Shopee, Mercado Livre e outras lojas.</p>
+</footer>
+<script src="script.js"></script>
+<script>document.addEventListener("DOMContentLoaded",()=>{renderProducts("homeProducts","Todos"); renderHomeShowcases();});</script>
+</body>
+</html>
