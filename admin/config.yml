@@ -2,8 +2,12 @@ backend:
   name: git-gateway
   branch: main
 
+local_backend: true
+
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
+
+publish_mode: editorial_workflow
 
 collections:
   - name: "blogs"
@@ -11,9 +15,11 @@ collections:
     folder: "content/blogs"
     create: true
     slug: "{{slug}}"
+
     fields:
       - { label: "Título", name: "title", widget: "string" }
-      - { label: "Resumo", name: "description", widget: "text" }
+      - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Imagem", name: "image", widget: "image" }
       - { label: "Conteúdo", name: "body", widget: "markdown" }
 
   - name: "products"
@@ -21,8 +27,10 @@ collections:
     folder: "content/products"
     create: true
     slug: "{{slug}}"
+
     fields:
       - { label: "Nome", name: "title", widget: "string" }
       - { label: "Preço", name: "price", widget: "string" }
       - { label: "Imagem", name: "image", widget: "image" }
       - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Link", name: "link", widget: "string" }
