@@ -1,19 +1,12 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: dorlusedison-cmd/gadget-pratico
   branch: main
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "products"
-    label: "Produtos"
-    folder: "content/products"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Nome", name: "name", widget: "string" }
-
   - name: "blogs"
     label: "Blogs"
     folder: "content/blogs"
@@ -21,3 +14,16 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Título", name: "title", widget: "string" }
+      - { label: "Descrição", name: "description", widget: "text" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
+
+  - name: "products"
+    label: "Produtos"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Nome", name: "title", widget: "string" }
+      - { label: "Preço", name: "price", widget: "string" }
+      - { label: "Imagem", name: "image", widget: "image" }
+      - { label: "Descrição", name: "description", widget: "text" }
