@@ -43,35 +43,105 @@ function isAdmin(){
 
 const defaultProducts = [
   {
-    id: 1,
-    name: "Fone Bluetooth Gamer",
-    category: "Gadgets",
-    price: "199,90",
-    image: "https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1200&auto=format&fit=crop",
-    description: "Som imersivo, bateria longa e ótimo custo-benefício.",
-    linkType: "amazon",
-    link: "https://amazon.com.br"
+  id: 1,
+  name: "Mini Projetor Portátil HY300 4K",
+  category: "Gadgets",
+  price: "156,84",
+  image: "https://m.media-amazon.com/images/I/81xR9y1bMtL._AC_SX522_.jpg",
+  description: "Transforme qualquer parede em um cinema com este mini projetor HY300 4K. Com Wifi 6, Bluetooth 5.0, Android 11 e até 130 polegadas de projeção, ele entrega uma experiência incrível para filmes, jogos e apresentações.",
+  linkType: "amazon",
+  link: "https://amzn.to/4uxM0zE"
   },
   {
-    id: 2,
-    name: "Suporte para Celular",
-    category: "Tecnologia",
-    price: "39,90",
-    image: "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?q=80&w=1200&auto=format&fit=crop",
-    description: "Útil para gravar vídeos, estudar e assistir aulas.",
-    linkType: "shopee",
-    link: "https://shopee.com.br"
-  },
+  id: 2,
+  name: "AQUECEDOR PAQ2000B 127V",
+  category: "Gadgets para Casa",
+  price: "239,42",
+  image: "https://m.media-amazon.com/images/I/51Evwde2p0L._AC_SX679_.jpg",
+  description: "Deixe sua casa mais aconchegante nos dias frios com o aquecedor PAQ2000B 127V. Compacto, potente e moderno, ele aquece o ambiente rapidamente, proporcionando mais conforto e praticidade para o seu dia a dia.",
+  linkType: "amazon",
+  link: "https://amzn.to/3Rscl3x"
+},
   {
-    id: 3,
-    name: "Teclado Mecânico RGB",
-    category: "Setup Gamer",
-    price: "249,90",
-    image: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1200&auto=format&fit=crop",
-    description: "Perfeito para setup gamer e produtividade.",
-    linkType: "mercado",
-    link: "https://mercadolivre.com.br"
-  }
+  id: 3,
+  name: "Dreo Aquecedor de Espaço 1500W",
+  category: "Gadgets para Casa",
+  price: "446,98",
+  image: "https://m.media-amazon.com/images/I/719wLHRMiqL._AC_SX679_.jpg",
+  description: "Aqueça seu ambiente com rapidez e eficiência usando o aquecedor portátil Dreo 1500W. Com tecnologia de cerâmica PTC, controle remoto, oscilação de 70°, termostato inteligente e temporizador de 12 horas, ele oferece conforto, segurança e praticidade para sua casa ou escritório.",
+  linkType: "amazon",
+  link: "https://amzn.to/3PoZj6i"
+},
+   {
+  id: 4,
+  name: "Controle Sem Fio Microsoft Xbox - Branco",
+  category: "Setup Gamer",
+  price: "341,05",
+  image: "https://m.media-amazon.com/images/I/61qjDq2Eg9L._AC_SX679_.jpg",
+  description: "Leve sua experiência gamer para outro nível com o Controle Sem Fio Microsoft Xbox. Com design moderno, conforto ergonômico e resposta ultra rápida, ele é perfeito para jogar por horas no Xbox, PC e dispositivos compatíveis.",
+  linkType: "amazon",
+  link: "https://amzn.to/4vbSjJg"
+},
+   {
+  id: 5,
+  name: "Notebook Acer Nitro V15 ANV15-52-51E4 Intel Core i5 16GB 512GB SSD RTX 4050",
+  category: "Setup Gamer",
+  price: "6.499,00",
+  image: "https://m.media-amazon.com/images/I/51Six8vrr3L._AC_SX522_.jpg",
+  description: "Domine qualquer jogo ou tarefa pesada com o poderoso Acer Nitro V15. Equipado com processador Intel Core i5, 16GB de RAM, SSD ultrarrápido de 512GB e placa de vídeo RTX 4050, ele entrega desempenho extremo, gráficos impressionantes e uma experiência fluida com tela IPS Full HD de 165Hz.",
+  linkType: "amazon",
+  link: "https://amzn.to/3PFwl1S"
+},
+   {
+  id: 6,
+  name: "Filtro de Linha iCLAMPER Energia 5 com Proteção contra Surtos Elétricos",
+  category: "Setup Gamer",
+  price: "61,99",
+  image: "https://m.media-amazon.com/images/I/513zBX7OWdL._AC_SX522_.jpg",
+  description: "Proteja seus aparelhos eletrônicos com segurança e eficiência usando o filtro de linha iCLAMPER Energia 5. Com proteção contra surtos elétricos, 5 tomadas e design moderno, ele é ideal para PC Gamer, notebook, monitor, PS5, roteador, Alexa e muito mais.",
+  linkType: "amazon",
+  link: "https://amzn.to/4wMeJ5l"
+},
+   {
+  id: 7,
+  name: "Carregador Portátil Mini Power Bank 10000mAh Com 02 Saídas Tipo-C / Lightning",
+  category: "Acessórios Celular",
+  price: "31,99",
+  image: "https://down-br.img.susercontent.com/file/br-11134207-81z1k-mf41ipxk0buvde.webp",
+  description: "Nunca fique sem bateria novamente com este Mini Power Bank de 10000mAh. Compacto, leve e fácil de levar para qualquer lugar, ele conta com saídas Tipo-C e Lightning, ideal para carregar seu celular com rapidez e praticidade no dia a dia.",
+  linkType: "shopee",
+  link: "https://s.shopee.com.br/6Ai73bIAKp"
+},
+   {
+  id: 8,
+  name: "Balança Bioimpedância Digital Profissional via Bluetooth",
+  category: "Tecnologia",
+  price: "32,98",
+  image: "https://down-br.img.susercontent.com/file/sg-11134201-8260y-mkwtzunpb4eedc@resize_w450_nl.webp",
+  description: "Monitore sua saúde de forma inteligente com esta balança digital de bioimpedância via Bluetooth. Ela analisa peso, gordura corporal, massa muscular e muito mais, sincronizando tudo diretamente no seu celular para acompanhar sua evolução com praticidade.",
+  linkType: "shopee",
+  link: "https://s.shopee.com.br/LkK7Dt7rz"
+},
+   {
+  id: 9,
+  name: "Havit Headphone Gamer H2002d com Microfone",
+  category: "Setup Gamer",
+  price: "139,99",
+  image: "https://m.media-amazon.com/images/I/71+kXnOiM2L._AC_SX522_.jpg",
+  description: "Mergulhe nos seus jogos com o Headphone Gamer Havit H2002d. Equipado com falantes potentes de 53mm, áudio imersivo e microfone de alta qualidade, ele oferece conforto extremo e comunicação clara para longas sessões de gameplay no PC, PS4 e Xbox.",
+  linkType: "amazon",
+  link: "https://amzn.to/4wS3qIU"
+},
+   {
+  id: 10,
+  name: "Mouse Gamer Logitech G203 LIGHTSYNC RGB",
+  category: "Setup Gamer",
+  price: "99,90",
+  image: "https://m.media-amazon.com/images/I/512M0CAOftL._AC_SX522_.jpg",
+  description: "Eleve sua gameplay com o Logitech G203 LIGHTSYNC RGB. Com sensor preciso de até 8.000 DPI, iluminação RGB personalizável e 6 botões programáveis, este mouse gamer oferece velocidade, conforto e desempenho profissional para qualquer tipo de jogo.",
+  linkType: "amazon",
+  link: "https://amzn.to/4wMieIL"
+},
 ];
 
 function getProducts(){
@@ -279,13 +349,13 @@ function editProduct(id){
 
 const defaultBlogs = [
   {
-    id: 1,
-    title: "10 gadgets úteis abaixo de R$50",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
-    description: "Lista de produtos baratos que facilitam sua rotina.",
-    content: "Aqui você pode colocar dicas, recomendações e explicações sobre gadgets baratos e úteis.",
-    linkType: "amazon",
-    link: "https://amazon.com.br"
+  id: 1,
+  title: "Por que a Balança Bioimpedância virou tendência em 2026?",
+  image: "https://down-br.img.susercontent.com/file/sg-11134201-8260y-mkwtzunpb4eedc@resize_w450_nl.webp",
+  description: "Descubra como essa balança inteligente está ajudando milhares de pessoas a cuidarem melhor da saúde.",
+  content: "A tecnologia chegou até na forma de cuidar da saúde. A Balança Bioimpedância Digital Profissional via Bluetooth não mostra apenas o peso, ela também analisa gordura corporal, massa muscular, IMC, metabolismo e vários outros dados importantes diretamente no seu celular. Com conexão Bluetooth, você acompanha toda sua evolução em tempo real através do aplicativo, tornando o processo muito mais prático e motivador. Ideal para quem quer emagrecer, ganhar massa muscular ou simplesmente manter uma rotina mais saudável.",
+  linkType: "shopee",
+  link: "https://s.shopee.com.br/LkK7Dt7rz"
   },
   {
     id: 2,
