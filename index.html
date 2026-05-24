@@ -31,8 +31,8 @@
 <section class="hero">
   <div>
     <div class="badge">✧ Curadoria premium 2026</div>
-    <h1>Descubra <span>gadgets incríveis</span> que facilitam sua vida</h1>
-    <p>Os melhores produtos úteis, tecnológicos e inteligentes para o seu dia a dia. Reviews honestas, ofertas reais e a melhor curadoria do Brasil.</p>
+    <h1>Os <span>gadgets mais virais</span> e úteis de 2026 em um só lugar</h1>
+    <p>Curadoria premium com produtos úteis, ofertas reais, gadgets virais e acessórios inteligentes para casa, celular, trabalho e setup gamer.</p>
     <div class="buttons">
       <a class="btn primary" href="gadgets.html">Ver Gadgets →</a>
       <a class="btn dark" href="ofertas.html">🔥 Ofertas do Dia</a>
@@ -50,7 +50,94 @@
   </div>
 </section>
 
-<section class="section">
+<section class="section pro-section reveal">
+  <div class="sectionHead">
+    <div>
+      <span class="kicker">Mais vendidos</span>
+      <h2>Produtos que estão <span class="green">chamando atenção</span></h2>
+    </div>
+    <p>Seleção rápida com itens que têm alto potencial de clique, compra por impulso e visual forte para redes sociais.</p>
+  </div>
+
+  <div class="grid featured-grid" id="bestSellers"></div>
+</section>
+
+<section class="section pro-section reveal">
+  <div class="sectionHead">
+    <div>
+      <span class="kicker">Por que confiar?</span>
+      <h2>Curadoria com <span class="green">transparência</span></h2>
+    </div>
+  </div>
+
+  <div class="trust-grid">
+    <div class="trust-card">
+      <strong>✔ Curadoria manual</strong>
+      <p>Selecionamos gadgets úteis, bonitos e com bom potencial de compra.</p>
+    </div>
+
+    <div class="trust-card">
+      <strong>✔ Links seguros</strong>
+      <p>Você é enviado para lojas externas conhecidas como Amazon, Shopee e Mercado Livre.</p>
+    </div>
+
+    <div class="trust-card">
+      <strong>✔ Conteúdo atualizado</strong>
+      <p>Novas recomendações, ofertas e artigos podem ser publicados pelo dashboard.</p>
+    </div>
+
+    <div class="trust-card">
+      <strong>✔ Transparência afiliada</strong>
+      <p>Podemos receber comissão sem custo extra para você.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section pro-section reveal">
+  <div class="sectionHead">
+    <div>
+      <span class="kicker">Avaliações</span>
+      <h2>O que os leitores <span class="green">gostam</span></h2>
+    </div>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>“Achei gadgets muito úteis e com links fáceis de acessar.”</p>
+      <strong>— Carlos M.</strong>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>“O site é simples, bonito e ajuda a encontrar produtos interessantes.”</p>
+      <strong>— Mariana S.</strong>
+    </div>
+
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>“Gostei das categorias e das ideias para setup gamer.”</p>
+      <strong>— Rafael T.</strong>
+    </div>
+  </div>
+</section>
+
+<section class="section newsletter-section reveal">
+  <div class="newsletter-box">
+    <span class="kicker">Ofertas & gadgets virais</span>
+    <h2>Receba novidades <span class="green">toda semana</span></h2>
+    <p>Cadastre seu email para receber ideias de gadgets, produtos virais e ofertas interessantes.</p>
+
+    <form class="newsletter-form" onsubmit="saveNewsletterEmail(event)">
+      <input id="newsletterEmail" type="email" placeholder="Seu melhor email" required>
+      <button type="submit">Quero receber</button>
+    </form>
+
+    <small id="newsletterMessage"></small>
+  </div>
+</section>
+
+<section class="section reveal">
   <div class="sectionHead">
     <div><span class="kicker">Categorias</span><h2>Navegue por <span class="green">categoria</span></h2></div>
     <p>Encontre exatamente o que precisa entre nossas categorias cuidadosamente selecionadas.</p>
@@ -152,6 +239,6 @@
   <p>© 2026 Gadget Prático — Afiliados Amazon, Shopee, Mercado Livre e outras lojas.</p>
 </footer>
 <script src="script.js"></script>
-<script>document.addEventListener("DOMContentLoaded",()=>{renderProducts("homeProducts","Todos"); renderHomeShowcases();});</script>
+<script>document.addEventListener("DOMContentLoaded",()=>{renderProducts("homeProducts","Todos"); renderProducts("bestSellers","Todos"); renderHomeShowcases();});</script>
 </body>
 </html>

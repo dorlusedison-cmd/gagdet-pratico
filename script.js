@@ -865,3 +865,57 @@ document.addEventListener("DOMContentLoaded", function(){
   createNewsletterPopup();
   setupRevealAnimations();
 });
+
+
+/* =========================
+PROFESSIONAL PREMIUM FEATURES
+========================= */
+
+function saveNewsletterEmail(event){
+  event.preventDefault();
+
+  const input = document.getElementById("newsletterEmail");
+  const message = document.getElementById("newsletterMessage");
+
+  if(!input) return;
+
+  const emails = JSON.parse(localStorage.getItem("newsletterEmails") || "[]");
+  const email = input.value.trim();
+
+  if(email && !emails.includes(email)){
+    emails.push(email);
+    localStorage.setItem("newsletterEmails", JSON.stringify(emails));
+  }
+
+  input.value = "";
+
+  if(message){
+    message.innerText = "Cadastro realizado! Você receberá novidades em breve.";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  // WhatsApp floating button
+  if(!document.querySelector(".whatsapp-float")){
+    const wa = document.createElement("a");
+    wa.className = "whatsapp-float";
+    wa.href = "contato.html";
+    wa.innerText = "💬 Fale conosco";
+    document.body.appendChild(wa);
+  }
+
+  // Scroll reveal
+  const revealItems = document.querySelectorAll(".reveal, .card, .form-box");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add("visible");
+      }
+    });
+  }, {threshold:.12});
+
+  revealItems.forEach(item => observer.observe(item));
+
+});

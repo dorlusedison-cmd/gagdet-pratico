@@ -39,3 +39,15 @@ Importante:
 - Os emails da newsletter ficam salvos no localStorage para teste. Para produção, use backend/banco de dados.
 
 Atualização: o botão/linha 'Ler artigo' foi removido. Agora o usuário clica diretamente no card do artigo para abrir a leitura completa.
+
+
+Atualização profissional:
+- Hero com texto mais forte.
+- Seção de mais vendidos na home.
+- Seção de confiança.
+- Avisos/avaliações com estrelas.
+- Newsletter simples com localStorage.
+- Botão WhatsApp/contato flutuante.
+- Animações de entrada no scroll.
+- Hover premium nas imagens dos produtos.
+- Footer e textos mais profissionais.
